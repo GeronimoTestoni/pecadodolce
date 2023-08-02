@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&family=Ysabeau+SC&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+.hero {
+    background-image: url(../images/fondo3.png)
+}
+
+.hero_header { display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-inline: 5rem;
+
+}
+
+.logo { 
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1rem;
+
+}
+
+.header_rigth p {
+    font-family:'REM', sans-serif;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header_rigth .menu {   
+    font-family:'REM', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.hero_main {
+    display: flex;
+}
+.hero_main > div {
+    flex: 1;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.slogan h4 {
+    font-family:'REM', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-top: 8rem;
+}
+
+
+.slogan h2 {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 6rem;
+}
+
+.slogan h3 {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 3rem;
+}
+
+.sloganimg {
+    margin-top:15rem;
+    margin-left: 25rem;
+}
+
+.grids {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+           "item1 item2"
+            "item1 item3";
+            gap: 3rem;
+}
+
+.griditem {
+    border-radius: 1rem;
+    background-size: contain;
+    background-position: center center;
+}
+
+.item3 {
+    grid-area: item1;
+    background-image: url(../images/6.png);
+
+
+}
+
+.item2 { grid-area: item2;
+    background-image: url(../images/7.png);
+
+}
+
+.item3 { grid-area: item3;
+    background-image: url(../images/torta.png
+    );
+}
+
+.form {
+align-items: center;
+}
+
+.maintext {
+align-self: center;
+}
