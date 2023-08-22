@@ -135,7 +135,9 @@
 }
 
 
-                              /** Quiensoy header **/
+/** ---------------------------------------------------------------------------- **/
+
+   /** QUIEN SOY HEADER **/
 
 
 
@@ -208,7 +210,10 @@
   color: whitesmoke;
 
 }
-/** productos header **/
+
+/** ---------------------------------------------------------------------------- **/
+
+/** PRODUCTOS HEADER **/
 
 .hero_prod {
   height: 100vh;
@@ -336,7 +341,9 @@
     margin-top: 1rem;
   }
 
-  /*** Header servicio ***/
+/** ---------------------------------------------------------------------------- **/
+
+  /*** SERVICIO HEADER ***/
 
   .hero_ser {
     height: 100vh;
@@ -408,7 +415,9 @@
   
   }
 
-  /** header servicio **/
+  /** ---------------------------------------------------------------------------- **/
+
+  /** CONTACTO HEADER **/
 
   .hero_contac {
     height: 100vh;
@@ -479,6 +488,38 @@
     color: whitesmoke;
   
   }
+
+  /** formula **/
+  .main_contacto {
+    padding: 8rem;
+    margin: 4rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Fira Sans', cursive;
+  
+  }
+  
+  .main_contacto h4 {
+    font-family: 'Fira Sans', cursive;
+  }
+  
+  .main_contacto label {
+    font-size: 1.5rem
+  }
+  
+  input[type=email] {
+    width: 75vh;
+  }
+  
+  input[type=email],
+  textarea {
+    width: 100%;
+    max-width: none;
+  }
+
+
+/** ---------------------------------------------------------------------------- **/
+
 
 
 /*** footer ***/
@@ -588,35 +629,12 @@
 }
 
 
-/*** GRID 
-
-.grid {
-
-  padding: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "item1 item2"
-    "item1 item3";
-  gap: 1rem;
-}
-
-.grid_item {
-
-  border-radius: 1rem;
-  background-size: cover;
-  background-position: center center;
-  padding: 2rem;
-
-}
-
-***/
 
 
+/** ---------------------------------------------------------------------------- **/
 
 
-/*** ----------------Productos------------------------- ***/
+/*** Productos***/
 
 .productos_main {
   margin-top: 3rem;
@@ -642,8 +660,9 @@
 .productos_main p {
   font-size: 1rem;
 }
+/** ---------------------------------------------------------------------------- **/
 
-/*** GRID PRODUCTOS ***/
+/*** GRID PRODUCTOS *
 
 .gridp {
   display: grid;
@@ -683,39 +702,18 @@
   grid-area: item3;
   background-image: url(../images/brownie.jpg);
 }
+**/
+/** ---------------------------------------------------------------------------- **/
 
 /*** CONTACTO ***/
-
-.main_contacto {
-  padding: 8rem;
-  margin: 4rem;
-  flex-wrap: wrap;
-  flex-direction: row;
-  font-family: 'Fira Sans', cursive;
-
-}
-
-.main_contacto h4 {
-  font-family: 'Fira Sans', cursive;
-}
-
-.main_contacto label {
-  font-size: 1.5rem
-}
-
-input[type=email] {
-  width: 75vh;
-}
-
-input[type=textarea] {
-  max-width: 90vh;
-}
 
 
 .formula {
 
   padding-right: 10rem;
 }
+
+/** ---------------------------------------------------------------------------- **/
 
 /** Arreglos quiensoy.html **/
 .content-container {
@@ -815,6 +813,8 @@ input[type=textarea] {
   font-family: "Pacifico", cursive !important;
 
 }
+
+/** ---------------------------------------------------------------------------- **/
 
 /** servicios **/
 
@@ -927,22 +927,155 @@ input[type=textarea] {
   z-index: 1;
 }
 
-
+/** ---------------------------------------------------------------------------- **/
 
 /** MEDIA QUERIES **/
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
 
-.hero { 
+/** Producto **/
+
+
+
+@media screen and (max-width: 768px) {
+  .hero_prod {
+    display: flex;
+    align-items: end;
+  }
+
+  .menu_prod { display: flex;
+    flex-direction: column;
+  
   }
 
 
-.hero .sloganimg {
+  .menu_productos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  .productos_main {
+      display: none;
+  }
+  .cartas {
+    margin-top: 20rem;
+    background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .card {
+      flex-basis: calc(33.33% - 20px);
+      margin: 10px;
+  }
+
+
+
+/** ---------------------------------------------------------------------------- **/
+
+
+
+/** Servicio **/
+
+.footerser {
+display: none;
+}
+.hero_ser {
+display: flex;
+align-items: end;
+}
+.hero_header_ser {
+display: none;
+height: 0 auto;
+}
+.servicios-presentacion { 
+
+text-align: center;
+align-items: center;
+background-image: none;
+overflow: auto;
 
 }
-.nav {
+
+.servicios-presentacion h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+padding: 0.5em;
+text-decoration: none;
+}
+.servicios-presentacion p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.5rem;
+padding: 0.5em;
+border-radius: 0.25em;
+text-align: center;
+}
+
+
+.menu_ser {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.ser_main {
+  display: none;
 }
 
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+  .quiensoy_text {
+    margin-top: 4rem;
+  }
+
+  .quiensoy_text h2 {
+    display: none;
+  }
+  .header_rigth_quien {display: none;}
+
+
+}
+
+@media screen and (max-width: 920px){
+
+  .menu_contac{
+    display: flex;
+    
+  }
+  .main_contacto {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main_contacto h2, h4 {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 680px) {
+
+.main_contacto {
+  padding: 8rem;
+  margin: 5rem;
+}
+
+input[type=email],
+textarea {
+  width: 100%;
+}
+
+.main_contacto label {
+  font-size: 1.2rem;
+}
+}
+
+
+
+
+
+
+
