@@ -1,0 +1,107 @@
+
+// INDEX //
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fondo3.png);
+  }
+  
+  .hero_header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    .logo {
+      font-family: 'Ysabeau SC', sans-serif;
+      font-size: 3rem;
+    }
+    
+    .header_rigth {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      
+      p {
+        margin-bottom: auto;
+        font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      .menu {
+        font-family: 'Ysabeau SC', sans-serif;
+        display: flex;
+        list-style-type: none;
+        font-size: 1.5rem;
+        gap: 1rem;
+        font-weight: 1rem;
+        
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        
+        &:hover {
+          background-color: #000000;
+          
+          a:hover {
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+  
+  .hero_main {
+    display: flex;
+    
+    > div {
+      flex: 1;
+    }
+  }
+  
+  .slogan {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    
+    &.sloganimg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-block: 10rem;
+      
+      img {
+        max-width: 400px;
+      }
+    }
+    
+    h4 {
+      font-family: 'REM', sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      border: 2px dashed rgb(72, 83, 83);
+      width: max-content;
+      padding: 0.6rem;
+    }
+    
+    h2 {
+      font-family: 'Ysabeau SC', sans-serif;
+      font-size: 3rem;
+      line-height: 1rem;
+      padding-top: 1rem;
+    }
+    
+    h3 {
+      font-family: 'Ysabeau SC', sans-serif;
+      font-size: 2rem;
+    }
+  }
